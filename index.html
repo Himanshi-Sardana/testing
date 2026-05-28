@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources Dashboard</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+/* Main Content */
+.main-content{
+    background-color: #fafafa;
+    width: 100%;
+}
+
+/* Search Box */
+.search-box input{
+    width: 250px;
+}
+* Top Cards */
+.info-card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+.orange h3{
+    color: orange;
+}
+/* Resource Cards */
+.resource-card{
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+.resource-card:hover{
+    transform: translateY(-5px);
+}
+.resource-card h5{
+    font-size: 18px;
+    font-weight: 600;
+}
+resource-card p{
+    font-size: 14px;
+}
+.btn-primary{
+    background-color: #6c3cf0;
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: #5a2fd6;
+}
+</style>
+</head>
+<body>
+<!-- Main Content Start -->
+ <div class="col-lg-10 main-content p-4">
+ <!-- Top Heading -->
+ <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+ <div>
+ <h2 class="fw-bold">Resources</h2>
+ <p class="text-muted">Home > Resources</p>
+ </div>
+ <div class="search-box d-flex gap-2">
+ <input type="text" class="form-control" placeholder="Search resources...">
+ <button class="btn btn-primary">
+ <i class="bi bi-search"></i>
+ </button>
+ <!--select bar-->
+ <select class="form-control w-autto" >
+ <option> All file types </option>
+ <option> pdf</option>
+ <option> images</option>
+ </select>
+ </div>
+ </div>
+ <!-- Top Cards -->
+ <div class="row mb-4 g-3">
+ <div class="col-sm-3">
+ <div class="card">
+            <div class="card-body d-flex align-items-center gap-4">
+                <div>
+                    <i class="fa-solid fa-file h1"></i>
+                </div>
+
+                <div class="info-card orange">
+                    <h3>74</h3>
+                    <p>Documents</p>
+                </div>
+            </div>
+ </div>
+ </div>
+ <div class="col-sm-3">
+ <div class="card">
+ <div class="card-body d-flex align-items-center gap-4">
+ <div>
+ <i class="fa-solid fa-file h1"></i>
+ </div>
+ <div class="info-card orange">
+ <h3>128</h3>
+ <p>Total Resources</p>
+ </div>
+ </div>
+ </div>
+ </div>
+<div class="col-sm-3">
+<div class="card">
+<div class="card-body d-flex align-items-center gap-4">
+<div>
+<i class="fa-solid fa-file h1"></i>
+</div>
+<div class="info-card orange">
+<h3>74</h3>
+<p>Documents</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="card">
+<div class="card-body d-flex align-items-center gap-4">
+<div>
+<i class="fa-solid fa-file h1"></i>
+</div>
+<div class="info-card orange">
+<h3>34</h3>
+<p>images</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div> 
+<h3> Resource List</h3>
+<nav class="navbar navbar-expand-sm bg-light">
+<div class="container-fluid bg-white py-2">
+<!-- Links -->
+<ul class="navbar-nav align-items-center d-flex gap-2">
+<li class="nav-item" >
+<div class="d-flex border align-items-center px-4 rounded">
+<i class="fa-solid fa-file"></i>
+<a class="nav-link" href="#"> All</a> 
+</div>
+</li>
+<li class="nav-item"  >
+<div class="d-flex border align-items-center px-4 rounded">
+<i class="fa-solid fa-file"></i> 
+<a class="nav-link" href="#"> Documents</a>  
+</div>
+</li>
+<li class="nav-item"  >
+<div class="d-flex border align-items-center px-4 rounded">
+<i class="fa-solid fa-file"></i> 
+<a class="nav-link" href="#">Excel</a>  
+</div>
+</li>
+</ul>
+<div class="d-flex gap-3 align-items-center">
+<div>
+<p class="mb-0">Sort By</p>
+</div>
+<div>
+<select class="form-control" name="" id="">
+<option value="">Sort By</option>
+</select>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<!-- Resource Cards -->
+<div class="row g-4">
+<!-- Card 1 -->
+<div class="col-md-6 col-lg-3">
+<div class="resource-card">
+<img style="aspect-ratio: 4/3;" src="./images/first image.jpg" class="img-fluid rounded" alt="image">
+<div class="d-flex justify-content-between align-items-center">
+    <h5 >Admission Form</h5>
+    <p class="text-muted">PDF File</p>
+</div>
+<div class="d-flex justify-content-between">
+<button class="btn btn-light">Preview</button>
+<button class="btn btn-primary">
+<i class="bi bi-download"></i>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="col-md-6 col-lg-3">
+<div class="resource-card">
+<img style="aspect-ratio: 4/3;" src="./images/first image.jpg" class="img-fluid rounded" alt="image">
+<div class="d-flex justify-content-between align-items-center">
+    <h5 >Excel Report</h5>
+    <p class="text-muted">XLSX File</p>
+</div>
+<div class="d-flex justify-content-between">
+<button class="btn btn-light">Preview</button>
+<button class="btn btn-primary">
+<i class="bi bi-download"></i>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="col-md-6 col-lg-3">
+<div class="resource-card">
+<img style="aspect-ratio: 4/3;" src="./images/first image.jpg" class="img-fluid rounded" alt="image">
+<div class="d-flex justify-content-between align-items-center">
+    <h5 >Poster Design</h5>
+    <p class="text-muted">JPG File</p>
+</div>
+<div class="d-flex justify-content-between">
+<button class="btn btn-light">Preview</button>
+<button class="btn btn-primary">
+<i class="bi bi-download"></i>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="col-md-6 col-lg-3">
+<div class="resource-card">
+<img style="aspect-ratio: 4/3;" src="./images/first image.jpg" class="img-fluid rounded" alt="image">
+<div class="d-flex justify-content-between align-items-center">
+    <h5 >Receipt File</h5>
+     <p class="text-muted">PDF File</p>
+</div>
+<div class="d-flex justify-content-between">
+<button class="btn btn-light">Preview</button>
+<button class="btn btn-primary">
+<i class="bi bi-download"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Content End -->
+</div>
+</div>
+
+</body>
+</html>
